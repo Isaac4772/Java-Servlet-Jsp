@@ -1,0 +1,61 @@
+package com.aungpaing.entity;
+
+import java.time.LocalDate;
+
+public class Student {
+	private String name;
+	private String email;
+	private String phone;
+	private LocalDate registerDate;
+	private boolean oldStudent;
+	private Batch batch;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public LocalDate getRegisterDate() {
+		return registerDate;
+	}
+
+	public void setRegisterDate(LocalDate registerDate) {
+		this.registerDate = registerDate;
+	}
+
+	public boolean isOldStudent() {
+		return oldStudent;
+	}
+
+	public void setOldStudent(boolean oldStudent) {
+		this.oldStudent = oldStudent;
+	}
+
+	public Batch getBatch() {
+		return batch;
+	}
+
+	public void setBatch(Batch batch) {
+		this.batch = batch;
+	}
+
+}

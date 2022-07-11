@@ -1,0 +1,5 @@
+package com.aungpaing.entity;
+
+public class Batch {
+
+}

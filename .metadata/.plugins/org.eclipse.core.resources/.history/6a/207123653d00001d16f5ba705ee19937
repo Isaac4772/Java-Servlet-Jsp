@@ -1,0 +1,60 @@
+package com.aungpaing;
+
+import java.io.IOException;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.aungpaing.entity.Batch;
+
+import jakarta.servlet.ServletConfig;
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@WebServlet(urlPatterns = { "/students", "/studentAdd" })
+public class StudentController extends HttpServlet {
+
+	private static final long serialVersionUID = 1L;
+
+	@Override
+	public void init(ServletConfig config) throws ServletException {
+		// TODO Auto-generated method stub
+		super.init(config);
+		ServletContext context = config.getServletContext();
+
+		List<Batch> batchList = (ArrayList<Batch>) context.getAttribute("batches");
+
+		if (batchList == null)
+			batchList = new ArrayList<Batch>();
+
+		batchList.add(new Batch("Batch 1", LocalDate.parse("2022-02-12")));
+		batchList.add(new Batch("Batch 2", LocalDate.parse("2022-08-23")));
+
+		context.setAttribute("batches", batchList);
+	}
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+		String action = req.getServletPath();
+		System.out.println("action name: " + action);
+		String title_value = "";
+		String page = "";
+		
+		if(action.equals("/students")) {
+			title_value = "Students";
+			page = "/students.jsp";
+		}
+		else if(action.equals("/studentAdd")) {
+			title_value = "Student|Add";
+			page = "/studentAdd.jsp";
+		}
+		req.setAttribute("title", title_value);
+		getServletContext().getRequestDispatcher(page).forward(req, resp);
+	}
+
+}

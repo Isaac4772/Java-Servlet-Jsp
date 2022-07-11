@@ -1,0 +1,37 @@
+package com.aungpaing;
+
+import java.io.IOException;
+import java.util.List;
+
+import com.aungpaing.entity.Batch;
+
+import jakarta.servlet.ServletConfig;
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@WebServlet(urlPatterns = {"/students"})
+public class StudentController extends HttpServlet{
+	
+	private static final long serialVersionUID = 1L;
+	
+	@Override
+	public void init(ServletConfig config) throws ServletException {
+		// TODO Auto-generated method stub
+		super.init(config);
+		ServletContext context = config.getServletContext();
+		
+		List<Batch> batchList = context.getAttribute("batches");
+		
+	}
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+		getServletContext().getRequestDispatcher("/students.jsp").forward(req, resp);
+	}
+
+}

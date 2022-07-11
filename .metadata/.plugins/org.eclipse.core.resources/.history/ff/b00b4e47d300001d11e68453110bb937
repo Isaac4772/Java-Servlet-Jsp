@@ -1,0 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+  pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Batch</title>
+
+<jsp:include page="common/resources.jsp"></jsp:include>
+
+</head>
+<body>
+  <jsp:include page="common/nav.jsp"></jsp:include>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <label for="" class="h6">Batch Name</label> <input type="text"
+          class="form-control" /> <label for="">Start Date</label> <input
+          type="date" class="form-control" />
+      </div>
+
+
+
+      <div class="col-8">
+        <label for="">Batch List</label>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Start Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Batches -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <jsp:include page="common/footer.jsp"></jsp:include>
+</body>
+</html>

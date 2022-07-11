@@ -1,0 +1,25 @@
+INDEX VERSION 1.131
+D:\z2p lvl2 javaee\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2360845757.index
+\jsp_tut-02\src\main\java
+D:\Java-Servlet-Jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\157007699.index
+\servlet_tut-03\src\main\java
+D:\Java-Servlet-Jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\539819765.index
+\jsp_tut-02\src\main\java
+D:\z2p lvl2 javaee\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\917270425.index
+\servlet-tut-01\src\main\java
+D:\z2p lvl2 javaee\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\539819765.index
+\jsp_tut-02\src\main\java
+D:\z2p lvl2 javaee\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\157007699.index
+\servlet_tut-03\src\main\java
+D:\z2p lvl2 javaee\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1048432159.index
+\jsp_tut-01\src\main\java
+D:\Java-Servlet-Jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3744333369.index
+\jsp_tut-01\src\main\java
+D:\z2p lvl2 javaee\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\701088536.index
+\servlet_tut-04\src\main\java
+D:\Java-Servlet-Jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2360845757.index
+\jsp_tut-02\src\main\java
+D:\Java-Servlet-Jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\917270425.index
+\servlet-tut-01\src\main\java
+D:\z2p lvl2 javaee\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3744333369.index
+\jsp_tut-01\src\main\java

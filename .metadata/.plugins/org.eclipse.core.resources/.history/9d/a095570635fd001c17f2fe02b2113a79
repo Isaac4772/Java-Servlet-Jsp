@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Boostrap</title>
+
+<!-- BOOSTRAP -->
+<link rel="stylesheet"
+	href="webjars/boostrap/5.1.3/css/boostrap.min.css" />
+
+<script type="text/javascript"
+	src="webjars/boostrap/5.1.3/js/boostrap.min.js"></script>
+
+<!-- JQEURY -->
+<script type="text/javascrip" src="webjars/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet"
+	href="webjars/font-awesome/6.1.0/css/fontawesome.min.css" />
+
+<script type="text/javascript"
+	src="webjars/font-awesome/6.1.0/js/fontawesome.min.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<h2>Boostrap</h2>
+		<a class="btn btn-primary">Add New Student</a>
+	</div>
+</body>
+</html>
